@@ -7,8 +7,8 @@ import time
 
 # 設定パラメータ
 #MODEL_PATH = '/opt/m5stack/data/yolo11n/yolo11n.axmodel'            # YOLO11 AXモデルのパス
-#MODEL_PATH = 'model/yolo11n_320x320_base.axmodel'            
-MODEL_PATH = 'model/yolo11n_640x640_base.axmodel'            
+#MODEL_PATH = 'model_convert/yolo11n_320x320_base.axmodel'            
+MODEL_PATH = 'model_convert/yolo11n_640x640_base.axmodel'            
 IMAGE_PATH = 'input.jpg'                 # 検出対象の画像パス
 OUT_IMAGE_PATH = 'output_ax.jpg'                 # 検出対象の画像パス
 CONFIDENCE_THRESHOLD = 0.45            # 確信度の閾値
