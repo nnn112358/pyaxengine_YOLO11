@@ -7,8 +7,8 @@ import time
 import platform
 
 # 設定パラメータ
-#MODEL_PATH = 'model/yolo11n_320x320_base.onnx'            # YOLOv8 ONNXモデルのパス
-MODEL_PATH = 'model/yolo11n_640x640_base.onnx'            # YOLOv8 ONNXモデルのパス
+#MODEL_PATH = 'model_convert/yolo11n_320x320_base.onnx'            # YOLOv8 ONNXモデルのパス
+MODEL_PATH = 'model_convert/yolo11n_640x640_base.onnx'            # YOLOv8 ONNXモデルのパス
 IMAGE_PATH = 'input.jpg'                 # 検出対象の画像パス
 OUT_IMAGE_PATH = 'output.jpg'                 # 検出対象の画像パス
 CONFIDENCE_THRESHOLD = 0.45            # 確信度の閾値
