@@ -1,28 +1,13 @@
 # pyengine_YOLO11
 
+![image](https://github.com/user-attachments/assets/81534112-91b2-4c75-9959-7b2c793e62dc)
+
+画像はぱくたその写真素材です。
 
 ```
 
-
 root@m5stack-LLM:# python yolo11n_inference_axmodel.py
-[INFO] Available providers:  ['AxEngineExecutionProvider']
-[INFO] Using provider: AxEngineExecutionProvider
-[INFO] Chip type: ChipType.MC20E
-[INFO] VNPU type: VNPUType.DISABLED
-[INFO] Engine version: 2.6.3sp
-[INFO] Model type: 0 (half core)
-[INFO] Compiler version: 3.3 3cdead5e
-
-=== ONNX Session Information ===
-
-Input Information:
-
-Input 0:
-  Name: images
-  Shape: [1, 320, 320, 3]
-  Type: uint8
-
-
+ Shape: [1, 320, 320, 3]
 Detected: person: 0.87 at bbox [498.3310848734982, 111.55581425954605, 278.2132893223388, 420.4441857404539]
 Detected: person: 0.76 at bbox [8.49951420817888, 73.51151486386775, 259.6783304037672, 300.01430557322453]
 Detected: person: 0.68 at bbox [347.0340543142811, 74.82708025065513, 236.69420366932172, 456.6064099010393]
@@ -41,23 +26,7 @@ outputs推論時間: 0.029 秒
 
 
 root@m5stack-LLM:# python yolo11n_inference_axmodel.py
-[INFO] Available providers:  ['AxEngineExecutionProvider']
-[INFO] Using provider: AxEngineExecutionProvider
-[INFO] Chip type: ChipType.MC20E
-[INFO] VNPU type: VNPUType.DISABLED
-[INFO] Engine version: 2.6.3sp
-[INFO] Model type: 0 (half core)
-[INFO] Compiler version: 3.3 3cdead5e
-
-=== ONNX Session Information ===
-
-Input Information:
-
-Input 0:
-  Name: images
-  Shape: [1, 640, 640, 3]
-  Type: uint8
-
+ Shape: [1, 640, 640, 3]
 
 Detected: person: 0.74 at bbox [56.718098457786255, 112.75218603554748, 348.0638618273406, 303.0331656273014]
 Detected: person: 0.74 at bbox [490.0313600790105, 114.09351242446292, 288.40366178610566, 417.036514903136]
@@ -80,16 +49,7 @@ outputs推論時間: 0.039 秒
 
 
 root@m5stack-LLM:# python yolo11n_inference_onnx.py
-
-=== ONNX Session Information ===
-
-Input Information:
-
-Input 0:
-  Name: images
-  Shape: [1, 3, 320, 320]
-  Type: tensor(float)
-
+Shape: [1, 3, 320, 320]
 Detected: person: 0.86 at bbox [501.23808416461543, 111.00954992291899, 276.3774981298593, 420.990450077081]
 Detected: person: 0.80 at bbox [8.732081621692487, 72.45808862373174, 263.5666475331709, 297.3052988993766]
 Detected: person: 0.74 at bbox [345.53547225186776, 76.17802891478823, 233.69201052635617, 455.82197108521177]
@@ -107,16 +67,7 @@ outputs推論時間: 0.394 秒
 合計時間: 0.608 秒                                                                                                                         onnx.py5stack-LLM:# python yolo11n_inference_axmodel.py ^C
 
 root@m5stack-LLM:# python yolo11n_inference_onnx.py
-
-=== ONNX Session Information ===
-
-Input Information:
-
-Input 0:
-  Name: images
-  Shape: [1, 3, 640, 640]
-  Type: tensor(float)
-
+Shape: [1, 3, 640, 640]
 Detected: person: 0.74 at bbox [30.31485575833358, 111.13598251396233, 377.68984779735547, 305.4190633637811]
 Detected: person: 0.72 at bbox [4.307478747869027, 71.60249066101905, 258.4215910144121, 271.9533179849589]
 Detected: person: 0.64 at bbox [348.7134455048363, 112.3502128556785, 429.2083953276142, 419.6497871443215]
@@ -135,5 +86,4 @@ Detected: dining table: 0.72 at bbox [0.4650998963506936, 297.65117929040713, 42
 outputs推論時間: 1.502 秒
 後処理時間: 0.494 秒
 合計時間: 2.034 秒
-
 ```
