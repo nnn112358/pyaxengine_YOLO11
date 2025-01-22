@@ -64,7 +64,7 @@ Detected: dining table: 0.64 at bbox [0.7067714217555476, 283.8773259917551, 423
 前処理時間: 0.023 秒
 outputs推論時間: 0.394 秒
 後処理時間: 0.190 秒
-合計時間: 0.608 秒                                                                                                                         onnx.py5stack-LLM:# python yolo11n_inference_axmodel.py ^C
+合計時間: 0.608 秒
 
 root@m5stack-LLM:# python yolo11n_inference_onnx.py
 Shape: [1, 3, 640, 640]
